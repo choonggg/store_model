@@ -10,6 +10,7 @@ module StoreModel
   module Model
     def self.included(base) # :nodoc:
       base.include ActiveModel::Model
+      base.include ActiveModel::Dirty
       base.include ActiveModel::Attributes
       base.include StoreModel::NestedAttributes
 
